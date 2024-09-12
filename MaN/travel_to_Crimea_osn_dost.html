@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey to Crimea</title>
+    <link rel="stylesheet" href="travel_to_Crimea.css">
+    <script src = "travel_to_Crimea.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="icon" href="изображения/icon.png">
+</head>
+<body>
+    <header>
+        <div id = "title">
+            <div class = "title_first">
+              <img src = "изображения/icon.png" class = "iconka">
+            </div>
+            <nav>
+              <input type="checkbox" name="menu" id="btn-menu" />
+              <label for="btn-menu">&#9776</label>
+              <ul>
+                <li><a class="but" href="file:///C:/Users/admin/Desktop/MaN/travel_to_Crimea.html">Города</a></li>
+                <li><a class="but" href="file:///C:/Users/admin/Desktop/MaN/travel_to_Crimea_osn_dost.html">Достопримечательности</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class = "content">
+          <div class = "right">
+            <img src = "изображения/crimyryyy.jpg"  class = "map">
+            <div class = "fon"></div>
+            <div class = "all_points_2">
+              <div data-tooltip = "Памятник затопленным кораблям" onclick ="inf_pamyatZatCor(); mark_2()">
+                <input type="button" value="" class="dosty" id = "zatCor">
+              </div>
+              <div data-tooltip = "Ласточкино гнездо" onclick ="inf_last(); mark_2()">
+                <input type="button" value="" class="dosty" id = "lastG">
+              </div>
+              <div data-tooltip = "Тайган" onclick ="inf_taygan(); mark_2()">
+                <input type="button" value="" class="dosty" id = "taygan">
+              </div>
+              <div data-tooltip = "Масандра" onclick ="inf_massandra(); mark_2()">
+                <input type="button" value="" class="dosty" id = "masan">
+              </div>
+              <div data-tooltip = "Форосский парк" onclick ="inf_forPark(); mark_2()">
+                <input type="button" value="" class="dosty" id = "foross">
+              </div>
+              <div data-tooltip = 'Парк "Айвозовский"' onclick ="inf_parkAivoz(); mark_2()">
+                <input type="button" value="" class="dosty" id = "parkAy">
+              </div>
+              <div data-tooltip = "Водопад Учан-Су" onclick ="inf_vodUchan(); mark_2()">
+                <input type="button" value="" class="dosty" id = "vodopU">
+              </div>
+              <div data-tooltip = "Сакское озеро" onclick ="inf_sakOzero(); mark_2()">
+                <input type="button" value="" class="dosty" id = "sakOz">
+              </div>
+              <div data-tooltip = "Мраморная пещера" onclick ="inf_mramPesch(); mark_2()">
+                <input type="button" value="" class="dosty" id = "mram">
+              </div>
+              <div data-tooltip = "Крымский мост" onclick ="inf_krimMost(); mark_2()">
+                <input type="button" value="" class="dosty" id = "most">
+              </div>
+              <div data-tooltip = "Белая скала" onclick ="inf_belSkala(); mark_2()">
+                <input type="button" value="" class="dosty" id = "belSk">
+              </div>
+              <div data-tooltip = "Херсонес Таврический" onclick ="inf_hersonesTavr(); mark_2()">
+                <input type="button" value="" class="dosty" id= "hersones">
+              </div>
+              <div data-tooltip = "Крепость Арабат" onclick ="inf_krepArabat(); mark_2()">
+                <input type="button" value="" class="dosty" id= "crAr">
+              </div>
+              <div data-tooltip = "Республиканский краеведческий музей" onclick ="inf_respKrayMuz(); mark_2()">
+                <input type="button" value="" class="dosty" id="RCM">
+              </div>
+            </div>
+          </div>
+          <div class = "left">
+            <div  id = "intro">
+              <p>Вас приветсвтует путеводитель по Крыму! Здесь вы можете найти информацию об основных достопримечательностях республики Крым. Нажимайте на активные точки карты, чтобы узнавать информацию об этих местах</p>
+            </div>
+            <div id = "information">
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

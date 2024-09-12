@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey to Crimea</title>
+    <link rel="stylesheet" href="travel_to_Crimea.css">
+    <script src = "travel_to_Crimea.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <link rel="icon" href="изображения/icon.png">
+</head>
+<body>
+    <header>
+        <div id = "title">
+            <div class = "title_first">
+              <img src = "изображения/icon.png" class = "iconka">
+            </div>
+            <nav>
+              <input type="checkbox" name="menu" id="btn-menu" />
+              <label for="btn-menu" id = "btn-menu1">&#9776</label>
+              <ul>
+                <li><a class="but" href="file:///C:/Users/admin/Desktop/MaN/travel_to_Crimea.html">Города</a></li>
+                <li><a class="but" href="file:///C:/Users/admin/Desktop/MaN/travel_to_Crimea_osn_dost.html">Достопримечательности</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class = "content">
+          <div class = "right">
+            <img src = "изображения/origMap.jpg"  class = "map">
+            <div class = "fon"></div>
+            <div class = "all_points">
+              <div onclick = "inf_simferopol (); mark()">
+                <input type="button" value="" class = "city point" id = "simferopol">
+              </div>
+              <div onclick = "inf_dzhankoy (); mark()">
+                <input type="button" value="" class = "city point" id = "dzhankoy">
+              </div>
+              <div onclick = "inf_nizhnegorsky (); mark()">
+                <input type="button" value="" class = "city point" id = "nizhnegorsky">
+              </div>
+              <div onclick = "inf_kerch (); mark()">
+                <input type="button" value="" class = "city point" id = "kerch">
+              </div>
+              <div onclick = "inf_sudak (); mark()">
+                <input type="button" value="" class = "city point" id = "sudak">
+              </div>
+              <div onclick = "inf_evpatoria (); mark()">
+                <input type="button" value="" class = "city point" id = "evpatoria">
+              </div>
+              <div onclick = "inf_yalta (); mark()">
+                <input type="button" value="" class = "city point" id = "yalta">
+              </div>
+              <div onclick = "inf_krasnoperecopsk (); mark()">
+                <input type="button" value="" class = "city point" id = "krasnoperecopsk">
+              </div>
+              <div onclick = "inf_foros (); mark()">
+                <input type="button" value="" class = "city point" id = "foros">
+              </div>
+              <div onclick = "inf_alushta (); mark()">
+                <input type="button" value="" class = "city point" id = "alushta">
+              </div>
+              <div onclick = "inf_feodosia (); mark()">
+                <input type="button" value="" class = "city point" id = "feodosia">
+              </div>
+              <div onclick = "inf_lenino (); mark()">
+                <input type="button" value="" class = "city point" id = "lenino">
+              </div>
+              <div onclick = "inf_belogorsk (); mark()">
+                <input type="button" value="" class = "city point" id = "belogorsk">
+              </div>
+              <div onclick = "inf_pervomayskoye (); mark()">
+                <input type="button" value="" class = "city point" id = "pervomayskoye">
+              </div>
+              <div onclick = "inf_krasnogvardeyskoe (); mark()">
+                <input type="button" value="" class = "city point" id = "krasnogvardeyskoe">
+              </div>
+              <div onclick = "inf_sevastopol (); mark()">
+                <input type="button" value="" class = "city point" id = "sevastopol">
+              </div>
+            </div>
+          </div>
+          <div class = "left">
+            <div  id = "intro">
+              <p>Вас приветсвтует путеводитель по Крыму! Нажимайте на активные точки карты, чтобы узнавать информацию об этих местах</p>
+            </div>
+            <div id = "information">
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

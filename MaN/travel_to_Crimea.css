@@ -1,0 +1,334 @@
+header {
+  width: 100%;     
+  height: 60px;  
+  background-color: #000000;
+  position: fixed;
+  vertical-align: middle;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+#title {
+	margin-left: 10%;
+	display: flex;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.but {
+	display: inline-flex;
+	text-decoration: none;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #FFFFFF;
+	font-family: My Gill Sans, Lato, sans-serif;
+	transition: all 200ms linear;
+	cursor: pointer;
+	font-size: 16pt;
+	background-color: #000000;
+	width: 300px;
+	text-align: center;
+}
+
+nav {
+	min-width: 290px;
+	position: relative;
+	text-align: right;
+}
+#btn-menu1 {
+	margin: 8px 12px 0 0;
+}
+nav > ul {
+   padding: 0;
+   position: relative;
+}
+nav li{
+    display: inline-block;
+    vertical-align: right;
+}
+nav a{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+input[type="checkbox"] {
+    display: none;
+}
+nav label {    
+    display: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media screen and (max-width: 1270px) {
+    
+    nav label{
+         display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+    
+}
+.title_first {
+	font-size: 20pt;
+	font-family: My Gill Sans, Lato, sans-serif;
+	font-weight: 500;
+	vertical-align: center;
+	margin-right: auto;
+	min-width: 200px;
+	display: inline-block;
+	margin-block-start: 0em;
+  margin-bottom: 100px;
+  color: #FFFFFF;
+}
+
+.content {
+	display: flex;
+  flex-direction: span;
+	padding-top: 20px;
+}
+.but:hover {
+	background: #6870f5;
+	color: #FFFFFF;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	box-shadow: 0 0 10px #a8f2ff;
+}
+body {
+	font-family: My Gill Sans, Lato, sans-serif;
+	line-height: 1.5;
+	margin-top: 0;
+	background: linear-gradient(-90deg, #4c6cd4, #9dafed , #4c6cd4, #9dafed, #4c6cd4, #9dafed, #4c6cd4, #9dafed, #4c6cd4, #9dafed, #4c6cd4, #9dafed);
+	background-size: 400% 400%;
+	animation: gradient 70s ease infinite;
+	height: 80vh;
+	margin-left: 0;
+}
+.map {
+	width: 900px;
+	position: fixed; z-index: -1;
+	margin-top: 60px;
+	flex-wrap: wrap;
+	border-radius: 25px;
+	border-style: solid;
+  border-width: 3px;
+}
+#intro {
+	margin-top: 20%;
+	text-align: center;
+	font-size: 18pt;
+	flex-direction: row;
+	margin-right: 10%;
+	margin-left: 10%;
+	color: #FFFFFF;
+}
+#simferopol {
+	margin: 500px 0 0 367px;
+}
+
+.point {
+	border-radius: 100%;
+	border-width: 3px;
+	cursor: pointer;
+	position: fixed; 
+	z-index: 1;
+	transition: all 200ms linear;
+}
+.point:hover {
+	background: #2E939C;
+	transform: scale(1.15);
+	box-shadow: 0 0 20px #49F8C5;
+}
+.city {
+	width: 25px;
+	height: 25px;
+}
+#dzhankoy {
+	margin: 285px 0 0 397px;
+}
+#nizhnegorsky {
+	margin: 353px 0 0 477px;
+}
+#kerch {
+	margin: 358px 0 0 838px;
+}
+#sudak {
+	margin: 525px 0 0 526px;
+}
+#evpatoria {
+  margin: 445px 0 0 194px;
+}
+#yalta {
+  margin: 644px 0 0 363px;
+}
+#krasnoperecopsk {
+  margin: 219px 0 0 277px;
+}
+#foros {
+  margin: 674px 0 0 303px;
+}
+#alushta {
+  margin: 579px 0 0 417px;
+}
+#feodosia {
+  margin: 469px 0 0 610px;
+}
+#lenino {
+	margin: 386px 0 0 694px;
+}
+#belogorsk {
+	margin: 470px 0 0 454px;
+}
+#pervomayskoye {
+	margin: 286px 0 0 291px;
+}
+#krasnogvardeyskoe {
+	margin: 346px 0 0 386px;
+}
+#sevastopol {
+	margin: 625px 0 0 232px;
+}
+#information {
+	padding-top: 5%;
+	text-align: center;
+	font-size: 18pt;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.name_city {
+	font-size: 24pt;
+}
+.img_city {
+	width: 600px;
+}
+@keyframes gradient { /*Фон*/
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.right {
+  margin-right: auto;
+  min-width: 900px;
+}
+.left{
+	min-width: 500px;
+	flex-wrap; 
+}
+.active {
+  background: #2E939C
+}
+.marker {
+	background: #2E939C
+}
+.dosty {
+  width: 22px; 
+  height: 22px;
+  border-color: black;
+  border-width: 3px;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 5px;
+	transition: all 200ms linear;
+}
+.dosty:hover {
+  background: #2E939C;
+	transform: scale(1.15);
+	box-shadow: 0 0 20px #49F8C5;
+}
+#zatCor  {
+	margin: 617px 0 0 211px;
+}
+#lastG {
+	margin: 668px 0 0 364px;
+}
+#taygan {
+	margin: 477px 0 0 457px;
+}
+#masan {
+	margin: 624px 0 0 392px;
+}
+#foross {
+	margin: 678px 0 0 309px;
+}
+#parkAy {
+	margin: 621px 0 0 410px;
+}
+#vodopU {
+	margin: 646px 0 0 354px;
+}
+#sakOz {
+	margin: 456px 0 0 225px;
+}
+#mram {
+	margin: 551px 0 0 383px;
+}
+#most {
+  margin: 360px 0 0 850px;
+}
+#belSk {
+	margin: 467px 0 0 467px;
+}
+#hersones {
+	margin: 609px 0 0 225px;
+}
+#crAr {
+	margin: 388px 0 0 641px;
+}
+#RCM {
+	margin: 458px 0 0 409px;
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: fixed;
+    width: 300px; /* Ширина подсказки */
+    left: 60px; top: 120px; /* Положение подсказки */
+    background: #ffa100; /* Синий цвет фона */
+    color: #2E939C; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 0.5s; /* Время появления подсказки */
+    font-weight: 1000;
+    text-align: center;
+    font-size: 14pt;
+    font-family: My Gill Sans, Lato, sans-serif;
+   } 
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 100px; /* Положение подсказки */
+   }
+.iconka {
+	width: 70px;
+	margin-right:20px;
+}
+.fon {
+	background-color: #ffa100;
+  height: 800px;
+  width: 700px;
+  position: fixed;
+  margin-left: 56%;
+  margin-top: 20px;
+  border-radius: 25px;
+  z-index: -1;
+  border-style: dashed;
+  border-width: 5px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+#information {
+	color: #FFFFFF;
+}
